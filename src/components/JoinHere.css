@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    color: white;
+    z-index: 10;
+
+}
+.tier {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    width: 400px;
+    height: 90%;
+    background: black;
+    border-radius: 0px 0px 10px 10px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    opacity: 0.7;
+
+}
+.containerInfo{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSubInfo {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.containerlastinfo{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.tier:hover {
+    transform: scale(1.05); /* Escala un 5% más grande al hacer hover */
+    opacity: 1;
+  }
+
+.containerTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    border-bottom: 3px solid #141414;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.containerTitleTier1{
+    border-top: 1px solid #B87333;
+
+    
+}
+
+.containerTitleTier2{
+    border-top: 1px solid gray;
+}
+
+.containerTitleTier3{
+    border-top: 1px solid gold;
+
+}
+
+.tier1 {
+    background-image: url(../assets/coppertier.svg);
+    border-bottom: 1px solid #B87333;
+    background-size: cover;
+}
+.tier2 {
+    background-image: url(../assets/silvertier.svg);
+    border-bottom: 1px solid gray;
+    background-size: cover;
+}
+.tier3 {
+    background-image: url(../assets/goldtier.svg);
+    border-bottom: 1px solid gold;
+    background-size: cover;
+}
+
+.titleTier {
+    margin-left: 10px;
+    
+}
+
+.containerPrice {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.containerBuy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: 80%;
+
+    }
+    .containerPrice {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .containerInfo {
+        margin-bottom: 50px;
+    }
+    .tier1 {
+        padding-top: 20px;
+    }
+    .tier {
+      margin-bottom: 40px;
+      width: 90%;
+      opacity: 1;
+    }
+  }

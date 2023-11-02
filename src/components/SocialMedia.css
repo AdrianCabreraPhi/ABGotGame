@@ -1,0 +1,14 @@
+.linkHover {
+    color: white; /* Color de enlace en estado normal */
+    text-decoration: none; /* Quitar subrayado por defecto */
+    transition: color 0.2s; /* Transición suave del color */
+  }
+  
+  .linkHover:hover {
+    color: red; /* Color de enlace en estado hover */
+  }
+
+
+.chakra-popover__content{
+  border: 0 !important;
+  }

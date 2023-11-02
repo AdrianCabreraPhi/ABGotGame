@@ -1,0 +1,35 @@
+
+.logoForMobile {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos CSS que se aplicarán cuando el ancho de la pantalla sea 768px o menos */
+
+    .navbar,.logo {
+        display: none !important;
+    }
+    .css-17xejub{
+        display: none !important;
+    }
+    .logoForMobile{
+        visibility: visible;
+    }
+    .logoForMobileText{
+        font-size: 25px;
+        color: white;
+        letter-spacing: 5px;
+    }
+
+
+
+    .header{
+        justify-content: center !important;
+    }
+    .socialMedia{
+        text-align: center;
+    }
+    
+  }
+
+

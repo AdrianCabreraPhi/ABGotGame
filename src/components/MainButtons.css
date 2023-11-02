@@ -1,0 +1,21 @@
+.btn {
+    background-color: white;
+    color: black;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos CSS que se aplicarán cuando el ancho de la pantalla sea 768px o menos */
+    .btn {
+        width: 240px !important;
+        margin-right: 0px !important;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+}
