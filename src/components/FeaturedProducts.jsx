@@ -11,12 +11,6 @@ import accesorios from "../assets/accesorios.png";
 import { SocialMedia } from "./SocialMedia";
 
 export function FeaturedProducts() {
-  const boxStyles = {
-    backgroundImage: `url(${gameGIF})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-  };
-
   const arrowStyle = {
     fontSize: "40px",
     color: "#63BDA5",
@@ -26,10 +20,10 @@ export function FeaturedProducts() {
       <Box color="white" p={4}>
         <div className="containerHeader">
           <div className="containerSocialMedia">
-          <SocialMedia  />
+            <SocialMedia />
           </div>
           <div className="containerNavbar">
-          <Navbar />
+            <Navbar />
           </div>
         </div>
       </Box>
@@ -39,41 +33,34 @@ export function FeaturedProducts() {
         height="calc(100vh - 64px)" // Resta la altura del navbar
       >
         <Box>
-          <Box h="40%" flex={1}>
-            <Text pt={10} pl={5}>
-              <Center className="textMobileVersion" color="white" fontSize="2xl">
-                For <span style={{ color: "#63BDA5", margin: "10px"}}>$40 </span> you can play me in a game
-              </Center>
-              <Center pt={10}>
+          <Text pt={10} pl={5}>
+            <Center className="textMobileVersion" color="white" fontSize="2xl">
+              For <span style={{ color: "#63BDA5", margin: "10px" }}>$40 </span>{" "}
+              you can play me in a game
+            </Center>
+            <Center pt={10}>
+              <Link
+                to="https://calendly.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FcCalendar style={{ fontSize: "250px" }} />
+              </Link>
+            </Center>
+            <Center className="floating-icon">
+              <AiOutlineArrowUp style={arrowStyle} />
+            </Center>
+            <Center pt={2}>
+              <Text color="#63BDA5" fontSize="1xl">
+                Click here to choose your date{" "}
                 <Link
                   to="https://calendly.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  <FcCalendar style={{ fontSize: "150px" }} />
-                </Link>
-              </Center>
-              <Center className="floating-icon">
-                <AiOutlineArrowUp style={arrowStyle} />
-              </Center>
-              <Center pt={2}>
-                <Text color="#63BDA5" fontSize="1xl">
-                  Click here to choose your date{" "}
-                  <Link
-                    to="https://calendly.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></Link>
-                </Text>
-              </Center>
-            </Text>
-          </Box>
-          <Box
-            className="containerGif"
-            h="51%"
-            style={boxStyles}
-            flex={1}
-          ></Box>
+                ></Link>
+              </Text>
+            </Center>
+          </Text>
         </Box>
         <Box>
           <Text className="title" fontSize="3xl" pl={5} pt={10} color="white">
@@ -84,7 +71,7 @@ export function FeaturedProducts() {
               (coming soon)
             </span>
           </Text>
-         
+
           <Box className="containerMerchandise" h="91%">
             <div className="cardProduct">
               <img src={ropa} alt="" />

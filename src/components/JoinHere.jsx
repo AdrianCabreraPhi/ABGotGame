@@ -11,7 +11,8 @@ import {Header} from "./Header";
 export function JoinHere() {
   const productTier1 = {
     description: "Tier 1",
-    price: "2.99"
+    price: "2.99",
+    donate: false
   }
 
   const productTier2 = {

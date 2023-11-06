@@ -13,6 +13,10 @@
         display: none !important;
     }
     .logoForMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         visibility: visible;
     }
     .logoForMobileText{
@@ -20,9 +24,6 @@
         color: white;
         letter-spacing: 5px;
     }
-
-
-
     .header{
         justify-content: center !important;
     }

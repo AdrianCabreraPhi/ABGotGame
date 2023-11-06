@@ -1,12 +1,14 @@
 import React from "react";
-import { Box, Flex, Text, Spacer,Center } from "@chakra-ui/react";
+import { Box, Flex, Spacer, Center } from "@chakra-ui/react";
 import { SocialMedia } from "./SocialMedia";
-import {Navbar} from "./Navbar"
+import { Navbar } from "./Navbar";
 import "./Header.css";
+import { PayPalDonateButton } from "./paypal/PayPalDonateButton";
+
 export function Header() {
-const B = {
-    color: "red"
-}
+  const B = {
+    color: "red",
+  };
 
   return (
     <>
@@ -27,13 +29,14 @@ const B = {
         </Box>
         <Spacer />
         <Box className="navbar">
-          {/* Elemento a la derecha */}
-        <Navbar/>
+          <Navbar />
         </Box>
       </Flex>
-    <div className="logoForMobile">
-      <Center className="logoForMobileText">A <span style={B}>B</span>  </Center>
-    </div>
+      <div className="logoForMobile">
+        <Center className="logoForMobileText">
+          A <span style={B}>B</span>
+        </Center>
+      </div>
     </>
   );
 }

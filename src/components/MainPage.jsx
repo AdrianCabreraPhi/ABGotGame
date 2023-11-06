@@ -3,14 +3,12 @@ import { Center, Text } from "@chakra-ui/react";
 import { MainButtons } from "./MainButtons";
 import Fade from "react-reveal/Fade";
 import "./MainPage.css";
+import { PayPalDonateButton } from "./paypal/PayPalDonateButton";
 export function MainPage() {
   const B = {
     color: "red",
   };
   const estiloTexto = {
-    textDecoration: "line-through",
-    textDecorationColor: "red",
-    textDecorationThickness: "5px",
     // textDecorationStyle: 'double', // Puedes usar otros estilos como 'dotted', 'dashed', etc.
     color: "white", // Cambia el color del texto si es necesario
     fontSize: 150,
@@ -30,6 +28,9 @@ export function MainPage() {
         <Fade delay={2000}>
           <Center className="centerButtons" >
             <MainButtons />
+          </Center>
+          <Center mt={4}>
+          <PayPalDonateButton/>
           </Center>
         </Fade>
       </Fade>
