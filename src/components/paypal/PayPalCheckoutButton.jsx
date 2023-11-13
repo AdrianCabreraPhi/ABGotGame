@@ -31,6 +31,8 @@ const PayPalCheckoutButton = ({ type,plan_id }) => {
 		}}
 		style={{
 			label: "subscribe",
+			layout: "horizontal"
+			
 		}}
 	/>);
 }
