@@ -10,9 +10,13 @@ function App() {
   // const [count, setCount] = useState(0);
   return (
     <>
+    {/* AdQkH_DzD8iMCd-UdIJQIKTAHGElfZAkvku9TDB751VzQb1D0FaUuZgpHxUGBMCCFmN2MRAfJttoE094 */}
       <PayPalScriptProvider
         options={{
-          "client-id": "AZ9s3zex2kMIXRoNVYkYpLWgytEFdunwbdKL_zXM4is8h3SjGTDdt-wGAGxOzi0eS1CWA-Mx6E70SBsp",
+          clientId: "AdQkH_DzD8iMCd-UdIJQIKTAHGElfZAkvku9TDB751VzQb1D0FaUuZgpHxUGBMCCFmN2MRAfJttoE094",
+          components: "buttons",
+          intent: "subscription",
+          vault: true,
         }}
       >
         <ParticlesBackground />
@@ -21,6 +25,7 @@ function App() {
           {/* <PayPalButtons style={{ layout: "horizontal" }} /> */}
           <Route path="/tiers" element={<JoinHere />}></Route>
           <Route path="/featured_products" element={<FeaturedProducts/>}></Route>
+          <Route path="*" element={<MainPage />} />
         </Routes>
       </PayPalScriptProvider>
     </>

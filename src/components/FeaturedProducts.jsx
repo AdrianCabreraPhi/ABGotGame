@@ -1,7 +1,6 @@
 import { Box, Grid, Text, Center } from "@chakra-ui/react";
 import Fade from "react-reveal/Fade";
 import { Navbar } from "./Navbar";
-import gameGIF from "../assets/gameGIF.gif";
 import { FcCalendar } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowUp } from "react-icons/ai";
