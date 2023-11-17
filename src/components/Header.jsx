@@ -7,7 +7,8 @@ import "./Header.css";
 export function Header() {
   const B = {
     color: "red",
-    marginRight: 10
+    marginRight: 10,
+    letterSpacing:-1
   };
 
   return (

@@ -39,7 +39,7 @@ export function FeaturedProducts() {
             </Center>
             <Center pt={10}>
               <Link
-                to="https://calendly.com/"
+                to="https://calendly.com/abgotg/game"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -52,11 +52,6 @@ export function FeaturedProducts() {
             <Center pt={2}>
               <Text color="#63BDA5" fontSize="1xl">
                 Click here to choose your date{" "}
-                <Link
-                  to="https://calendly.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                ></Link>
               </Text>
             </Center>
           </Text>
@@ -71,8 +66,8 @@ export function FeaturedProducts() {
             </span>
           </Text>
 
-          <Box className="containerMerchandise" h="91%">
-            <div className="cardProduct">
+          <Box className="containerMerchandise"  >
+            <div mr={4} className="cardProduct">
               <img src={ropa} alt="" />
               <span>Clothes</span>
             </div>

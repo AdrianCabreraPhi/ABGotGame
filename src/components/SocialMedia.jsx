@@ -85,7 +85,7 @@ export function SocialMedia() {
       </Box>
       <Box>
         <a
-          href="https://discord.gg/M5YqV9YU"
+          href="https://discord.gg/FreMRheBGD"
           target="_blank"
           className="linkHover"
         >

@@ -6,6 +6,7 @@ import { JoinHere } from "./components/JoinHere";
 import ParticlesBackground from "./components/ParticlesBackground";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import {FeaturedProducts} from "./components/FeaturedProducts";
+import { BackButtonMobile } from "./components/BackButtonMobile";
 function App() {
   // const [count, setCount] = useState(0);
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/featured_products" element={<FeaturedProducts/>}></Route>
           <Route path="*" element={<MainPage />} />
         </Routes>
+        <BackButtonMobile/>
       </PayPalScriptProvider>
     </>
   );
