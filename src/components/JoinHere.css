@@ -112,11 +112,13 @@
 
     }
     .containerPrice {
-        height: 200px;
-        margin-bottom: 30px;
+        height: 100px;
     }
     .containerInfo {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        justify-content: start;
+        align-items: start;
+        margin-left: 0px !important;
     }
     .tier1 {
         margin-top: 40px;
@@ -125,5 +127,15 @@
       margin-bottom: 40px;
       width: 85%;
       opacity: 1;
+    }
+    .containerSubInfo {
+        margin-left: 10px;
+    }
+    .containerlastinfo{
+        margin-left: 20px;
+        
+    }
+    .containerBuy{
+        margin-bottom: 10px;
     }
   }
