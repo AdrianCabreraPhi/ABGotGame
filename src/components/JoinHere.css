@@ -32,11 +32,11 @@
 
 .containerSubInfo {
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 85px;
 }
 .containerlastinfo{
     margin-top: 10px;
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
 .tier:hover {
@@ -93,7 +93,7 @@
     display: flex;
     flex-direction: column;
     height: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     text-align: center;
     justify-content: center;
 }
