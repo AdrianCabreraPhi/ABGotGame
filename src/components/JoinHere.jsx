@@ -74,7 +74,7 @@ export function JoinHere() {
                 </List>
               </div>
               <div className="containerlastinfo">
-                <List fontSize="1xl" spacing={3}>
+                <List fontSize="1xl" spacing={2}>
                   <ListItem alignItems="center" display="flex">
                     <ListIcon as={CheckCircleIcon} color="gray.500" />1 x (1
                     hour) Personal training session per month

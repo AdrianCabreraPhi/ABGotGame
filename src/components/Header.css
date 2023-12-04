@@ -1,6 +1,7 @@
 
 .logoForMobile {
     visibility: hidden;
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -18,17 +19,17 @@
         align-items: center;
         justify-content: center;
         visibility: visible;
+        margin-bottom: -50px;
     }
-    .logoForMobileText{
-        font-size: 25px;
-        color: white;
-        letter-spacing: 5px;
+    .logoForMobileImage{
+        width: 70%;
     }
     .header{
         justify-content: center !important;
     }
     .socialMedia{
         text-align: center;
+        margin-bottom: -40px;
     }
     
   }

@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import {
-	PayPalScriptProvider,
 	PayPalButtons,
 	usePayPalScriptReducer
 } from "@paypal/react-paypal-js";
+
+const [paymentApproved, setPaymentApproved] = useState(false);
 
 const PayPalCheckoutButton = ({ type,plan_id }) => {
 	const [{ options }, dispatch] = usePayPalScriptReducer();
@@ -17,6 +18,12 @@ const PayPalCheckoutButton = ({ type,plan_id }) => {
             },
         });
     }, [type]);
+	
+	const onApprove = (data, actions) => {
+		// Función que se ejecuta cuando el pago se ha aprobado
+		console.log('Pago aprobado:', data);
+		setPaymentApproved(true);
+	  };
 
 	return (<PayPalButtons
 		createSubscription={(data, actions) => {
@@ -29,6 +36,7 @@ const PayPalCheckoutButton = ({ type,plan_id }) => {
 					return orderId;
 				});
 		}}
+		onApprove={onApprove}
 		style={{
 			label: "subscribe",
 			layout: "horizontal"

@@ -29,7 +29,6 @@ function App() {
         <ParticlesBackground />
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
-          {/* <PayPalButtons style={{ layout: "horizontal" }} /> */}
           <Route path="/tiers" element={<JoinHere />}></Route>
           <Route path="/featured_products" element={<FeaturedProducts/>}></Route>
           <Route path="*" element={<MainPage />} />

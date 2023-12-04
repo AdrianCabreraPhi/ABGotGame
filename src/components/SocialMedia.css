@@ -1,3 +1,8 @@
+
+
+.containerSocialMedia{
+  z-index: 2;
+}
 .linkHover {
     color: white; /* Color de enlace en estado normal */
     text-decoration: none; /* Quitar subrayado por defecto */

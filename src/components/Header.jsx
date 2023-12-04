@@ -3,6 +3,7 @@ import { Box, Flex, Spacer, Center } from "@chakra-ui/react";
 import { SocialMedia } from "./SocialMedia";
 import { Navbar } from "./Navbar";
 import "./Header.css";
+import ABGOTGAMELOGO from '../assets/AB_GOT_GAME_logo.png'
 
 export function Header() {
   const B = {
@@ -34,8 +35,8 @@ export function Header() {
         </Box>
       </Flex>
       <div className="logoForMobile">
-        <Center className="logoForMobileText">
-          A<span style={B}>B</span>  GOT GAME
+        <Center className="logoForMobileImage">
+        <img  src={ABGOTGAMELOGO} />
         </Center>
       </div>
     </>

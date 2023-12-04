@@ -3,6 +3,8 @@ import { Center} from "@chakra-ui/react";
 import { MainButtons } from "./MainButtons";
 import "./MainPage.css";
 import { PayPalDonateButton } from "./paypal/PayPalDonateButton";
+import ABGOTGAMELOGO from '../assets/AB_GOT_GAME_logo.png'
+
 export function MainPage() {
   const B = {
     color: "red",
@@ -17,9 +19,7 @@ export function MainPage() {
     <>
         <Header />
           <Center className="centralLogo" h="50vh">
-            <div style={estiloTexto}>
-              A<span style={B}>B</span> GOT GAME
-            </div>
+          <img width={1600}  src={ABGOTGAMELOGO} />
           </Center>
           <Center className="centerButtons" >
             <MainButtons />

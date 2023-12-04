@@ -97,14 +97,13 @@
     text-align: center;
     justify-content: center;
 }
-
-.containerBuy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
+.containerBuy{
+    height: 45px;
 }
 
+div[data-testid="paypal-buttons"] .paypal-button-text {
+    color: white !important;
+  }
 @media (max-width: 768px) {
     .container {
       flex-direction: column;
@@ -134,8 +133,5 @@
     .containerlastinfo{
         margin-left: 20px;
         
-    }
-    .containerBuy{
-        margin-bottom: 10px;
     }
   }

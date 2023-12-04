@@ -17,7 +17,7 @@ import { BsFillHouseDoorFill } from "react-icons/bs";
 import "./SocialMedia.css";
 export function SocialMedia() {
   return (
-    <Flex>
+    <Flex >
       <Box marginRight={4}>
         <Popover>
           <PopoverTrigger>
@@ -74,7 +74,7 @@ export function SocialMedia() {
         </a>
       </Box>
 
-      <Box marginRight={4}>
+      <Box className="containerSocialMedia" marginRight={4}>
         <a
           href="https://www.twitch.tv/abgotgame_"
           target="_blank"
@@ -83,7 +83,7 @@ export function SocialMedia() {
           <FaTwitch fontSize={30} />
         </a>
       </Box>
-      <Box>
+      <Box className="containerSocialMedia">
         <a
           href="https://discord.gg/FreMRheBGD"
           target="_blank"
