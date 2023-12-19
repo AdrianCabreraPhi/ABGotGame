@@ -56,7 +56,7 @@ INSTRUCTIONS:
 
 Once you join the server, @ one of the server mods (@Naz / @TMA) or at me (@ab) in the "chat-room" channel for access to the subscriber channels of the server. 
 
-Once you get a reply from either one of us, DM us the email you used when paying for your subscription and you will be given access accordingl
+Once you get a reply from either one of us, DM us the email you used when paying for your subscription and you will be given access accordingly
 
 Thanks again for choosing to be apart of this community
 Best,
