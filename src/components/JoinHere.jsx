@@ -98,6 +98,7 @@ export function JoinHere() {
               <PayPalCheckoutButton
                 plan_id="P-45815596MC532753KMVIQ57Q"
                 type="subscription"
+                tier={1}
               />
             </div>
           </div>
@@ -168,6 +169,7 @@ export function JoinHere() {
               <PayPalCheckoutButton
                 plan_id="P-69V56865VU224901SMVIQ7ZA"
                 type="subscription"
+                tier={2}
               />
             </div>
           </div>
@@ -235,6 +237,7 @@ export function JoinHere() {
               <PayPalCheckoutButton
                 plan_id="P-7SS07117KR465740NMVIRAHY"
                 type="subscription"
+                tier={3}
               />
             </div>
           </div>
